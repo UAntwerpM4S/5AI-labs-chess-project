@@ -1,3 +1,5 @@
+from typing import Any
+
 import chess
 
 from fiveaichess.agents.agent import Agent
@@ -5,7 +7,7 @@ from fiveaichess.agents.agent import Agent
 
 class UCIEngine():
 
-    option_definitions: dict[str, dict[str, any]] = {}
+    option_definitions: dict[str, dict[str, Any]] = {}
     
     def __init__(self, agent: Agent) -> None:
         self.agent = agent
@@ -100,7 +102,7 @@ class UCIEngine():
                     pass
                 case 'combo':
                     o_vars = definition['vars']
-                    for o_var in o_vars.spit(' '):
+                    for o_var in o_vars.split(' '):
                         declaration += f" var {o_var}"
                 case 'button':
                     pass
