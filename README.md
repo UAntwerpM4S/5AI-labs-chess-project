@@ -123,7 +123,7 @@ En Croissant's engine selection dialog expects an executable file. It does not a
 ~/.local/share/org.encroissant.app/engines/engines.json
 ```
 
-- Add an engine entry to the JSON array, keeping any existing entries.
+- Add an engine entry to the JSON array, keeping any existing entries. If `engines.json` is missing or empty, create it and wrap the entry below in a JSON array.
 
 **Windows**
 
